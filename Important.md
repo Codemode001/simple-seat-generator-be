@@ -11,25 +11,29 @@ source venv/bin/activate
 
 * On windows *
 
-```python -m venv venv
+```python 
+-m venv venv
 venv\Scripts\activate
 ```
 
 2. Install Dependencies
 
-```python pip install -r requirements.txt
+```python 
+pip install -r requirements.txt
 ```
 
 3. Run the FastAPI Server
 
 For local development:
 
-```python uvicorn main:app --reload
+```python 
+uvicorn main:app --reload
 ```
 
 For deployment (accessible on the network):
 
-```python uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```python 
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 
@@ -40,7 +44,8 @@ For deployment (accessible on the network):
         - image: Seat layout image file (multipart/form-data)
     - Response:
 
-    ```json {
+    ```json 
+        {
          "script": "Generated Next.js script..."
         }
 
