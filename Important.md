@@ -3,13 +3,13 @@
 
 ### Setup Instructions
 1. Create & Activate a Virtual Environment
-* On macOS/Linux: * 
+*On macOS/Linux:* 
 
 ```python3 -m venv venv
 source venv/bin/activate
 ```
 
-* On windows *
+*On windows*
 
 ```python 
 -m venv venv
@@ -24,13 +24,13 @@ pip install -r requirements.txt
 
 3. Run the FastAPI Server
 
-For local development:
+*For local development:*
 
 ```python 
 uvicorn main:app --reload
 ```
 
-For deployment (accessible on the network):
+*For deployment (accessible on the network):*
 
 ```python 
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
